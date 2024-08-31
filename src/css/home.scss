@@ -1,0 +1,109 @@
+.side-nav-bar {
+    max-width: 300px;
+    width: 100%;
+    background-color: var(   --lightest-opacity);
+    padding: clamp(9px,3vw,40px) clamp(9px,3vw,40px) 1px clamp(9px,3.9vw,50px);
+    .nav-comp {
+        width: 100%;
+    }
+}
+.content-right-frame {
+    width: 100%;
+    max-width: 900px;
+    padding: clamp(10px,3vw,60px);
+}
+.primary-btn{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--white);
+    border: 2px solid var(--blue-50);
+    border-radius: 12px;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+    padding: 16px 24px 16px 16px ;
+    cursor: pointer;
+    &:hover{
+        background-color: var(--blue);
+        color: var(--white);
+    }
+}
+.nav-comp{
+    max-height: 800px ;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+  .logo{
+        max-width: 147px;
+
+    }
+    .logo-para{
+        margin-bottom: 20px;
+        margin-bottom: 0;
+        max-height: 104px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+ 
+    .list-nav-ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        // margin: 30px 0;
+        li{
+            padding: 10px 0;
+            color: var(--fg);
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+            cursor: pointer;
+            transition: all .4s;
+            transform-origin: left;
+            &:hover{
+                color: var(--blue);
+                transform: scale(1.07) ;
+                transition: all .4s;
+            }
+            .icon{
+                font-size: 24px;
+              
+            }
+        }
+        .active{
+            color: var(--blue);
+        }
+    }
+    .grey-fade{
+        // margin: 45px 0 50px 0;
+        li{
+            color: var(--fg-50);
+        }
+    }
+    .icons-frame{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 12px;
+        color: var(--fg-50);
+    }
+    .copy-right{
+        color: var(--fg-50);
+        // padding: 28px 0 10px 0;
+    }
+}
+
+
+.hero-section-wrapper{
+    max-width: 780px;
+    padding: 80px 24px 40px 24px;
+}
