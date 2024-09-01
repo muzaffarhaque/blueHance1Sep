@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "../css/style.scss";
 import "../css/home.scss";
+import "../css/cources.scss";
 import IndexApp from ".";
 const inter = Inter({ subsets: ["latin"] });
 

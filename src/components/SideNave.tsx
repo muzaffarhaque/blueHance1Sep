@@ -8,18 +8,19 @@ import { Article, BehanceLogo, FramerLogo, GlobeSimple, InstagramLogo, Layout, S
 
 export default function SideNave() {
   return (
-    <div className='nav-comp'>
-        <Image className='logo' src={logo} alt='logo'/>
+    <div className="nav-comp">
+      <div className='sub-side-nav '>
+        <Image className='logo' src={logo} alt='logo' />
         <p className='logo-para'>We provide superior design education and cutting-edge AI solutions to empower professionals and elevate businesses.</p>
-        
-        <ul className='list-nav-ul'>
-            <li className='b-18 fg'><GraduationCap className='icon' /> UX & AI Academy</li>
-            <li className='b-18 fg'><Robot className='icon'/> AI Solutions</li>
-            <li className='b-18 fg'><AppWindow className='icon'/> Tech Agency</li>
-        </ul>
 
+        <ul className='list-nav-ul'>
+          <li className='b-18 fg'><GraduationCap className='icon' /> UX & AI Academy</li>
+          <li className='b-18 fg'><Robot className='icon' /> AI Solutions</li>
+          <li className='b-18 fg'><AppWindow className='icon' /> Tech Agency</li>
+        </ul>
+ 
         <button className='primary-btn'>
-        <StarFour size={24} />AI Assistant
+          <StarFour size={24} />AI Assistant
         </button>
 
         <ul className='list-nav-ul grey-fade'>
@@ -27,16 +28,17 @@ export default function SideNave() {
           <li><Article size={24} /> Blog</li>
         </ul>
         <div className="icons-frame">
-        <BehanceLogo size={24} />
-        <YoutubeLogo size={24} />
-        <TwitterLogo size={24} />
-        <GlobeSimple size={24} />
-        <Storefront size={24} />
-        <Layout size={24} />
-        <InstagramLogo size={24} />
-        <FramerLogo size={24} />
+          <BehanceLogo size={24} />
+          <YoutubeLogo size={24} />
+          <TwitterLogo size={24} />
+          <GlobeSimple size={24} />
+          <Storefront size={24} />
+          <Layout size={24} />
+          <InstagramLogo size={24} />
+          <FramerLogo size={24} />
         </div>
         <p className='copy-right'>@ copyright 2024</p>
+      </div>
     </div>
   )
 }
